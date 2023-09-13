@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container pt-36">
+      <div
+        class="py-4 shadow-lg flex flex-col justify-center items-center px-4 gap-6"
+      >
+        <span class="self-start text-slate-500">Amount</span>
+
+        <input
+          onkeypress="return onlyNumberKey(event)"
+          id="amount-input"
+          type="text"
+          class="w-full text-blue-700 text-2xl bg-transparent border-b-2 outline-none border-blue-500 py-1 px-3"
+        />
+        <select
+          name=""
+          id="from-select-box"
+          class="w-full text-center outline-none bg-transparent border-2 border-gray-300 py-2"
+        ></select>
+        <select
+          name=""
+          id="to-select-box"
+          class="w-full text-center outline-none bg-transparent border-2 border-gray-300 py-2"
+        ></select>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white w-full py-4"
+          id="convert-btn"
+        >
+          Convert
+        </button>
+        <div class="text-blue-700 lg:text-3xl text-xl">
+          <span id="amount-span"></span>
+          <span id="converted-span"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
